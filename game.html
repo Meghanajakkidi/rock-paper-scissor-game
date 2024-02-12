@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gamecontent">
+    <h1>ROCK - PAPER - SCISSORS</h1>
+    <div>
+        <h2>SCORE:</h2>
+        <div class="content">
+        <div id="playerscore">0</div>
+        <div class="border"></div>
+        <div id="computerscore">0</div>
+        <div id="playerchoice">player</div>
+        <div style="padding-left: 60%;" id="computerchoice">computer</div>
+    </div>
+    <div id="result"></div>
+    </div>
+    <h2>START GAME</h2>
+<div id="options">
+    <button class="btn" onclick="playBtn('rock')"><img src="https://tse4.mm.bing.net/th?id=OIP.FQFjE4uQWh0Z0L7rLOoyCQHaHa&pid=Api&P=0&h=180" width="50px" height="50px"></button>
+    <button class="btn" onclick="playBtn('paper')"><img src="https://tse3.mm.bing.net/th?id=OIP.LBesg3N_oPwgR_f8CCqfAwAAAA&pid=Api&P=0&h=180"  width="50px" height="50px"></button>
+    <button class="btn" onclick="playBtn('scissor')"><img src="https://www.pinclipart.com/picdir/middle/536-5360227_scissors-hand-rock-paper-scissors-png-clipart.png"  width="50px" height="50px"></button>
+</div>
+<button id="restart" onclick="Restart()">REPLAY</button>
+</div>
+<div class="line"></div>
+<div class="text">
+    <h1>HOW TO PLAY</h1>
+    <ol type="number">
+        <li>You can start the game by selecting "rock", "scissors" or "paper".</li>
+        <li>Choose continuously until you create a pattern.</li>
+        <li>Examples of patterns:
+            <ul>
+                <li>Rock, rock, rock, rock, etc.</li>
+               <li> Rock, scissors, rock, scissors, etc.</li>
+               <li>Rock, scissors, paper, rock, scissors, paper, etc.</li>
+               <li>Paper, paper, paper, paper, etc.</li>
+                    
+            </ul>
+        </li>
+<li>See that you will lose.</li>
+    </ul>
+</div>
+</div>
+    <script src="game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+.content {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+
+    column-gap: 10px;
+    font-size: 20px;
+    color: purple;
+}
+
+#playerchoice,
+#computerchoice {
+    font-size: 15px;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#result {
+    font-size: 30px;
+    text-align: center;
+}
+
+.border {
+    border-left: 2px solid;
+    height: 100px;
+    color: purple;
+}
+
+h2 {
+
+    color: mediumblue;
+}
+
+h1 {
+    color: darkmagenta;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn {
+    border-radius: 100%;
+    transition: 2s;
+}
+
+img {
+    border-radius: 100%;
+
+}
+
+.gamecontent {
+    margin-left: 10%;
+}
+
+#options {
+    display: flex;
+
+    gap: 20px;
+}
+
+.btn:hover {
+    background-color: blue;
+    transform: translate(20);
+}
+
+.greentext {
+    color: green;
+}
+
+.redtext {
+    color: red;
+}
+
+#computerscore {
+    color: red;
+}
+
+#playerscore {
+    color: greenyellow;
+}
+
+#restart {
+
+    margin-top: 1%;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: purple;
+}
+
+.text {
+    margin-left: 10%;
+}
+
+.line {
+    border-left: 2px solid;
+    height: 500px;
+    color: purple;
+    margin-left: 10%;
+}
+
+.container {
+    display: flex;
+}
+
+@media(max-width:786px) {
+    .line {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media (min-width:787px) and (max-width:900px){
+    .line {
+        display: none;
+         
+    }  
+          .container{
+            display: flex;
+                    flex-direction: row-reverse;
+          }
+          
+        }
+        @media (min-width:901px) and (max-width:1200px){
+            .line {
+                display: none;
+                 
+            }  
+                  .container{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    
+                  }
+        }
